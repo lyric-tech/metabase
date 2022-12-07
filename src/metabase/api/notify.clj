@@ -10,7 +10,7 @@
             [schema.core :as s]
             [toucan.db :as db]))
 
-(def ^:private ^:dynamic *execute-asynchronously* true)
+(def ^:private ^:dynamic *execute-asynchronously* false)
 
 (api/defendpoint POST "/db/:id"
   "Notification about a potential schema change to one of our `Databases`.
